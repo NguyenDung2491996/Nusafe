@@ -1,0 +1,150 @@
+/*
+========================= Table of content ==========================
+
+2.Header
+3.Slide
+4.Block
+5.About me section
+6.Count number section
+7.List icon section
+8.Blog section
+9.Slide course section
+10.Story  section
+11.Story
+12.Contact
+13.Feed back
+14.List logo
+15.Footer
+
+
+
+*/
+
+
+/* =============== 2. Header =============== */
+
+@media screen and (max-width:1200px) {
+    .header_bottom .menu>.list_menu>.list_item:not(:first-child)>.list_link {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .header_bottom .content .search {
+        display: none;
+    }
+    .header_bottom .content .cart {
+        display: none;
+    }
+    .header_bottom .icon .fa-bars {
+        display: block;
+        font-size: 3rem;
+    }
+    .header_bottom {
+        position: relative;
+    }
+    .header_bottom .menu .list_menu {
+        flex-direction: column;
+        display: flex;
+    }
+    .header_bottom .menu>.list_menu>.list_item:not(:first-child)>.list_link {
+        margin-left: 0rem;
+    }
+    .header_bottom .menu>.list_menu {}
+    .header_bottom .menu>.list_menu>.list_item .list_link {
+        padding: 1rem 0;
+        display: block;
+    }
+    .header_bottom .menu {
+        height: 0;
+        z-index: 99;
+        overflow: hidden;
+        transition: 0.5s;
+        display: flex;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        justify-content: center;
+        background: black;
+    }
+    .header_bottom .menu.show {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header .top_bar {
+        display: none;
+    }
+    .header {
+        height: 10.4rem;
+    }
+    .header #navbar {
+        top: 0!important;
+    }
+}
+
+
+/* ======================== 3.Breadcrumb ==================== */
+
+@media screen and (max-width:1024px) and (min-width:768px) {}
+
+@media screen and (max-width:767px) {
+    .breadcrumb {
+        height: 51rem;
+    }
+    .breadcrumb .btn {
+        bottom: 6rem;
+    }
+}
+
+@media screen and (max-width:575px) {}
+
+@media screen and (max-width:320px) {}
+
+
+/* ======================== 4.Pagination event ==================== */
+
+@media screen and (max-width:991px) {
+    .event .list_event .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        bottom: -80px;
+    }
+    .event .list_event .content .date {
+        margin-left: 0;
+        width: 7rem;
+        height: 7rem;
+    }
+    .event .list_event .content .meta {
+        margin-left: 0;
+    }
+    .event .list_event .content .meta .meta_top {
+        justify-content: center;
+        padding: 1rem 0;
+    }
+}
+
+
+/* ======================== 5. Footer ==================== */
+
+@media screen and (max-width:991px) {
+    .footer .row>[class*=col] {
+        padding-bottom: 3rem;
+    }
+    .footer .widgets {
+        padding-bottom: 9rem;
+    }
+    .footer .copyright .copyright_wrap {
+        flex-direction: column;
+    }
+    .footer .copyright .copyright_wrap .logo {
+        padding-bottom: 2rem;
+    }
+    .footer .copyright .copyright_wrap .text {
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+}
